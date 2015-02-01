@@ -4,4 +4,7 @@ proc treeview {{name .} tree} {
     foreach subdir [glob -nocomplain -directory $name -type d *] {
         treeview $subdir $tree
     }
+    foreach leaf [ glob -nocomplain -directory $name -type f * ] {
+        .tree insert $tree end -text $leaf
+    }
 }
