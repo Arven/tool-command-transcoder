@@ -1,9 +1,11 @@
-#!/usr/bin/wish
-package require tile
+#!/usr/bin/tclsh
+package require Tk
 source treeview.tcl
 
-ttk::setTheme alt
-ttk::treeview .tree
-pack .tree -expand 1 -fill both
+wm title . "Tool-Command Transcoder"
 
-treeview ../path {}
+ttk::setTheme alt
+ttk::treeview .files
+pack .files -expand 1 -fill both
+
+treeview ../path
