@@ -1,6 +1,5 @@
 #!/usr/bin/tclsh
 package require Tk
-package require Expect
 
 source treeview.tcl
 source fileinfo.tcl
