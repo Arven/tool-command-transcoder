@@ -1,0 +1,3 @@
+General;%FileSize/String1%\r\n
+Video;%Duration/String%\r\n%Width%x%Height%\r\n
+Audio;%SamplingRate/String%
